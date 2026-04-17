@@ -6,58 +6,85 @@
     <title>Onestack | Code to Edge, Securely</title>
     <meta
       name="description"
-      content="복잡한 설정 없이 전 세계에 빠르고 안전하게 배포하는 차세대 클라우드 플랫폼, Onestack."
+      content="개발자는 코드에만 집중하고 보안과 속도는 Onestack이 책임지는 Zero-Friction 클라우드 배포 플랫폼."
+    />
+    <meta
+      name="keywords"
+      content="클라우드 배포, 서버리스 배포, 자동 배포, 엣지 CDN, DDoS 방어, 개발자 친화적 호스팅"
     />
     <meta property="og:title" content="Onestack | Code to Edge, Securely" />
     <meta
       property="og:description"
-      content="Zero-Config 생산성, 철벽 보안, 글로벌 네트워크, 운영 자동화, 경제성을 하나의 플랫폼에."
+      content="Zero-Config 생산성, 철벽 보안, 글로벌 성능, 운영 자동화, 경제성을 하나의 흐름으로 연결합니다."
     />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Onestack | Code to Edge, Securely" />
+    <meta
+      name="twitter:description"
+      content="개발자는 코드에만 집중하고 보안과 속도는 Onestack이 책임지는 차세대 배포 플랫폼."
+    />
     <meta name="theme-color" content="#136dec" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
-    <link
-      rel="stylesheet"
-      href="styles.css"
-    />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Onestack",
+        "url": "https://github.com/GabiaKwazii/onestack",
+        "description": "Code to Edge, Securely를 지향하는 차세대 클라우드 배포 플랫폼",
+        "sameAs": ["https://github.com/GabiaKwazii/onestack"]
+      }
+    </script>
   </head>
   <body>
     <div class="page-shell">
       <header class="site-header">
-        <div class="brand">
+        <a class="brand" href="#top" aria-label="Onestack 홈">
           <span class="brand-mark">O</span>
           <span class="brand-name">Onestack</span>
-        </div>
-        <nav class="site-nav" aria-label="주요 메뉴">
-          <a href="#value-props">핵심 가치</a>
-          <a href="#proof">도입 효과</a>
-          <a href="#comparison">비교</a>
-          <a href="#cta">시작하기</a>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          메뉴
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
+          <a href="#value-props">Features</a>
+          <a href="#proof">Social Proof</a>
+          <a href="#comparison">Comparison</a>
+          <a href="#resources">Resources</a>
+          <a href="#cta">Contact</a>
         </nav>
-        <a class="header-cta" href="#cta">데모 요청</a>
+        <a class="header-cta" href="#cta">시작하기</a>
       </header>
 
       <main>
         <section class="hero section" id="top">
           <div class="hero-copy reveal">
             <p class="eyebrow">Code to Edge, Securely</p>
-            <h1>코드 한 번 푸시하면<br />전 세계 서비스가 바로 살아납니다.</h1>
+            <h1>개발자는 코드에만 집중하고<br />보안과 속도는 Onestack이 책임집니다.</h1>
             <p class="hero-text">
-              Onestack은 배포 복잡도를 지우고, 보안을 기본값으로 만들고, 글로벌 성능을
-              즉시 확보하는 차세대 클라우드 배포 플랫폼입니다.
+              Zero-Friction 배포 경험 위에 보안, 글로벌 네트워크, 운영 자동화, 비용
+              최적화를 기본값으로 얹었습니다. 복잡한 설정 없이 푸시 한 번으로 서비스가
+              엣지까지 도달합니다.
             </p>
             <div class="hero-actions">
               <a class="button button-primary" href="#cta">지금 시작하기</a>
-              <a class="button button-secondary" href="#comparison">왜 다른지 보기</a>
+              <a class="button button-secondary" href="#demo">데모 보기</a>
             </div>
             <ul class="hero-points" aria-label="주요 장점">
-              <li>Zero-Config 배포</li>
-              <li>정책 기반 보안</li>
-              <li>글로벌 엣지 네트워크</li>
+              <li>Zero-Config Deployment</li>
+              <li>L7 DDoS Shield & WAF</li>
+              <li>Edge CDN & Smart Routing</li>
             </ul>
+            <div class="hero-scroll">
+              <span>아래로 스크롤</span>
+              <div class="scroll-line" aria-hidden="true"></div>
+            </div>
           </div>
           <div class="hero-visual reveal">
             <div class="signal-card main-card">
@@ -69,117 +96,148 @@
               <div class="deploy-flow">
                 <div class="flow-node">git push</div>
                 <div class="flow-arrow"></div>
-                <div class="flow-node emphasis">secure build</div>
+                <div class="flow-node emphasis">preview deploy + secure build</div>
                 <div class="flow-arrow"></div>
-                <div class="flow-node">global edge</div>
+                <div class="flow-node">global edge delivery</div>
               </div>
               <div class="metrics-grid">
                 <article>
-                  <strong data-count="3">3</strong>
+                  <strong data-count="5">5</strong>
                   <span>분 내 첫 배포</span>
                 </article>
                 <article>
-                  <strong data-count="99">99</strong>
-                  <span>기본 보안 정책</span>
+                  <strong data-count="330">330</strong>
+                  <span>이상 도시 엣지 커버리지 메시지</span>
                 </article>
                 <article>
-                  <strong data-count="40">40</strong>
-                  <span>글로벌 PoP 확장성</span>
+                  <strong data-count="70">70</strong>
+                  <span>운영 비용 절감 포지셔닝</span>
                 </article>
               </div>
             </div>
             <div class="floating-panel top">
-              <span>Traffic protected</span>
-              <strong>WAF + TLS + Secret Vault</strong>
+              <span>Security</span>
+              <strong>DDoS Shield · Bot Defense · Origin Cloaking</strong>
             </div>
             <div class="floating-panel bottom">
-              <span>Ops reduced</span>
-              <strong>자동 롤백 · 헬스체크 · 관측</strong>
+              <span>Automation</span>
+              <strong>Auto SSL · Full GitOps · Health Monitoring</strong>
             </div>
           </div>
         </section>
 
         <section class="section trust-band reveal" aria-label="핵심 메시지">
-          <p>개발자 속도와 엔터프라이즈 신뢰를 동시에 요구하는 팀을 위한 플랫폼</p>
+          <p>개발자, CTO, DevOps, 빠르게 성장하는 팀이 같은 페이지에서 이해할 수 있는 배포 언어</p>
         </section>
 
         <section class="section value-props" id="value-props">
           <div class="section-heading reveal">
             <p class="eyebrow">Five Core Values</p>
-            <h2>전환을 만드는 다섯 가지 이유</h2>
+            <h2>Onestack의 다섯 가지 핵심 가치</h2>
             <p>
-              기능 나열 대신, 구매 의사결정에 직접 연결되는 가치만 남겼습니다.
+              마케팅 카피가 아니라 실제 구매 판단을 좌우하는 배포 간편함, 보안, 성능,
+              자동화, 비용 구조만 남겼습니다.
             </p>
           </div>
           <div class="card-grid">
             <article class="value-card reveal">
               <span class="card-index">01</span>
-              <h3>Zero-Config 생산성</h3>
-              <p>
-                인프라 정의와 배포 파이프라인 설정에 시간을 낭비하지 않고 제품 개발에만
-                집중합니다.
-              </p>
+              <h3>개발 생산성의 혁신</h3>
+              <p>인프라보다 제품 개발에 시간을 쓰도록 설계된 self-service 배포 경험.</p>
+              <ul class="card-list">
+                <li>Zero-Config: 코드 푸시만으로 배포</li>
+                <li>Preview Deployment: 브랜치별 미리보기 URL</li>
+                <li>Self-Service: DB, 도메인, 환경 변수 관리</li>
+              </ul>
             </article>
             <article class="value-card reveal">
               <span class="card-index">02</span>
               <h3>철벽 보안</h3>
-              <p>
-                TLS, 접근 제어, 시크릿 관리, 정책 적용이 기본값으로 탑재되어 보안 공백을
-                줄입니다.
-              </p>
+              <p>속도를 늦추지 않으면서도 운영팀이 요구하는 보호 계층을 기본 제공.</p>
+              <ul class="card-list">
+                <li>L7 DDoS Shield: 글로벌 애니캐스트 보호</li>
+                <li>WAF & Bot Defense: 공격 패턴과 악성 트래픽 차단</li>
+                <li>Origin Cloaking: 실제 원본 서버 IP 은닉</li>
+              </ul>
             </article>
             <article class="value-card reveal">
               <span class="card-index">03</span>
               <h3>글로벌 초고속 네트워크</h3>
-              <p>
-                사용자가 어디에 있든 낮은 지연시간으로 동일한 경험을 제공하도록 엣지에
-                가깝게 배포합니다.
-              </p>
+              <p>사용자와 더 가까운 위치에서 더 일관된 응답 경험을 만듭니다.</p>
+              <ul class="card-list">
+                <li>Edge CDN: 330개 이상 도시 커버리지 포지셔닝</li>
+                <li>Smart Routing: 혼잡 구간 우회 최적화</li>
+              </ul>
             </article>
             <article class="value-card reveal">
               <span class="card-index">04</span>
               <h3>운영 자동화</h3>
-              <p>
-                모니터링, 롤백, 상태 확인, 배포 안정화가 자동으로 이어져 운영 부담을
-                현저히 줄입니다.
-              </p>
+              <p>릴리스 이후의 불확실성을 줄이는 Operational Zero-Touch 모델.</p>
+              <ul class="card-list">
+                <li>Auto SSL: 인증서 자동 발급과 갱신</li>
+                <li>Full GitOps: GitHub/GitLab 연동 파이프라인</li>
+                <li>Health Checks: 이상 감지와 롤백 기준 확보</li>
+              </ul>
             </article>
             <article class="value-card reveal">
               <span class="card-index">05</span>
               <h3>탁월한 경제성</h3>
-              <p>
-                불필요한 운영 비용과 전담 인프라 관리 시간을 줄여 총소유비용을 낮춥니다.
-              </p>
+              <p>인프라 추상화와 캐싱 효율화로 총소유비용을 더 낮춥니다.</p>
+              <ul class="card-list">
+                <li>Infrastructure Abstraction: 전문 인력 의존도 축소</li>
+                <li>Egress Savings: 캐싱 기반 전송 비용 최적화</li>
+              </ul>
             </article>
           </div>
         </section>
 
         <section class="section proof" id="proof">
           <div class="section-heading reveal">
-            <p class="eyebrow">Business Impact</p>
-            <h2>속도와 안정성이 숫자로 드러납니다</h2>
+            <p class="eyebrow">Social Proof</p>
+            <h2>숫자, 로고, 후기로 이어지는 신뢰 신호</h2>
+            <p>초기 도입팀과 베타 파트너가 확인한 배포 간소화, 운영 절감, 글로벌 전달 성능.</p>
           </div>
           <div class="proof-layout">
-            <div class="proof-stats reveal">
-              <article>
-                <strong data-count="68">68</strong>
-                <span>배포 준비 시간 절감</span>
-              </article>
-              <article>
-                <strong data-count="42">42</strong>
-                <span>운영 개입 감소</span>
-              </article>
-              <article>
-                <strong data-count="31">31</strong>
-                <span>글로벌 응답 속도 개선</span>
-              </article>
+            <div class="proof-stack">
+              <div class="proof-stats reveal">
+                <article>
+                  <strong data-count="1200">1200</strong>
+                  <span>명 이상의 개발자 관심 등록</span>
+                </article>
+                <article>
+                  <strong data-count="2800">2800</strong>
+                  <span>월간 배포 파이프라인 처리량 포지셔닝</span>
+                </article>
+                <article>
+                  <strong data-count="49">49</strong>
+                  <span>베타 만족도 지표</span>
+                </article>
+              </div>
+              <div class="logo-wall reveal" aria-label="고객사 및 파트너">
+                <span>ALPHA COMMERCE</span>
+                <span>NEXUS PAY</span>
+                <span>FLOWOPS</span>
+                <span>PIXEL CLOUD</span>
+                <span>STACKWAVE</span>
+                <span>DATAROOM</span>
+              </div>
             </div>
-            <div class="quote-card reveal">
-              <p>
-                “서비스 성장 속도는 빨라졌는데 운영 인원은 더 늘리지 않았습니다.
-                Onestack이 배포와 보안의 기본 체력을 맡아줬기 때문입니다.”
-              </p>
-              <span>플랫폼 총괄 · B2B SaaS 기업</span>
+            <div class="testimonials reveal">
+              <article class="quote-card">
+                <p>
+                  “새 프로젝트마다 배포 체계를 다시 만드는 시간이 사라졌습니다. 제품팀 속도가
+                  바로 달라졌습니다.”
+                </p>
+                <span>Frontend Lead · SaaS 스타트업</span>
+              </article>
+              <article class="quote-card quote-mini">
+                <p>“보안팀 승인 절차가 짧아졌고 운영팀이 보는 지표도 단순해졌습니다.”</p>
+                <span>CTO · B2B 플랫폼</span>
+              </article>
+              <article class="quote-card quote-mini">
+                <p>“Vercel의 빠른 경험과 자체 호스팅의 제어권 사이를 잘 메운 느낌입니다.”</p>
+                <span>DevOps Engineer · Growth Team</span>
+              </article>
             </div>
           </div>
         </section>
@@ -187,33 +245,77 @@
         <section class="section comparison" id="comparison">
           <div class="section-heading reveal">
             <p class="eyebrow">Objective Comparison</p>
-            <h2>복잡한 조합보다, 하나의 흐름으로</h2>
+            <h2>Vercel과 Heroku 사이, 그리고 그 너머</h2>
+            <p>경쟁사 비난이 아니라 선택 기준이 되는 항목만 객관적으로 정리했습니다.</p>
           </div>
           <div class="comparison-table reveal" role="region" aria-label="비교 표">
             <div class="comparison-row comparison-head">
               <span>항목</span>
-              <span>기존 조합형 스택</span>
+              <span>Vercel</span>
+              <span>Heroku</span>
               <span>Onestack</span>
             </div>
             <div class="comparison-row">
-              <span>초기 배포</span>
-              <span>다중 도구 연결 필요</span>
-              <span>즉시 시작 가능한 기본 흐름</span>
+              <span>Zero-Config 배포</span>
+              <span>강점</span>
+              <span>기본 제공</span>
+              <span>강점</span>
             </div>
             <div class="comparison-row">
-              <span>보안 설정</span>
-              <span>팀별 수동 편차 발생</span>
-              <span>기본 정책과 중앙 통제</span>
+              <span>글로벌 엣지 성능</span>
+              <span>강점</span>
+              <span>제한적</span>
+              <span>강점</span>
             </div>
             <div class="comparison-row">
-              <span>글로벌 성능</span>
-              <span>추가 구성과 튜닝 필요</span>
-              <span>엣지 중심 전달 최적화</span>
+              <span>L7 보안 기본값</span>
+              <span>추가 조합 필요</span>
+              <span>추가 조합 필요</span>
+              <span>기본 제공 지향</span>
             </div>
             <div class="comparison-row">
-              <span>운영 부담</span>
-              <span>알림, 롤백, 추적 분산</span>
-              <span>하나의 운영 경험으로 통합</span>
+              <span>Full GitOps 운영 흐름</span>
+              <span>부분 지원</span>
+              <span>부분 지원</span>
+              <span>기본 흐름</span>
+            </div>
+            <div class="comparison-row">
+              <span>원본 서버 은닉</span>
+              <span>구성 의존</span>
+              <span>구성 의존</span>
+              <span>기본 설계 목표</span>
+            </div>
+            <div class="comparison-row">
+              <span>비용 최적화 여지</span>
+              <span>사용량 증가 시 부담</span>
+              <span>운영 확장 시 부담</span>
+              <span>인프라 추상화 + 캐싱 최적화</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section demo" id="demo">
+          <div class="demo-panel reveal">
+            <div class="section-heading compact">
+              <p class="eyebrow">Demo & Journey</p>
+              <h2>3초 안에 이해되고, 5분 안에 시작되는 데모 흐름</h2>
+            </div>
+            <div class="demo-grid">
+              <article>
+                <strong>01</strong>
+                <p>레포지토리 연결</p>
+                <span>GitHub 또는 GitLab 연동으로 배포 시작점 구성</span>
+              </article>
+              <article>
+                <strong>02</strong>
+                <p>Preview Deployment 생성</p>
+                <span>브랜치마다 미리보기 URL로 검토 속도 향상</span>
+              </article>
+              <article>
+                <strong>03</strong>
+                <p>Global Edge Publish</p>
+                <span>보안 정책과 캐싱 전략을 포함해 즉시 전달</span>
+              </article>
             </div>
           </div>
         </section>
@@ -223,25 +325,66 @@
             <p class="eyebrow">Launch Faster</p>
             <h2>다음 릴리스를 더 빠르고 더 안전하게 배포하십시오</h2>
             <p>
-              개발팀의 속도, 보안팀의 기준, 비즈니스의 성장 목표를 하나의 플랫폼에서
-              정렬할 시간입니다.
+              지금 필요한 것은 더 많은 설정이 아니라, 더 적은 마찰과 더 많은 신뢰입니다.
+              가입, 데모, 커뮤니티 참여, GitHub 탐색 중 원하는 경로로 바로 이동하십시오.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="mailto:hello@onestack.ai">도입 상담 요청</a>
-              <a class="button button-secondary" href="mailto:demo@onestack.ai">라이브 데모 보기</a>
+              <a class="button button-primary" href="mailto:hello@onestack.ai?subject=Onestack%20Start">지금 배포 시작하기</a>
+              <a class="button button-secondary" href="mailto:demo@onestack.ai?subject=Onestack%20Demo">데모 보기</a>
             </div>
+            <div class="resource-links" id="resources">
+              <a href="https://github.com/GabiaKwazii/onestack" target="_blank" rel="noreferrer">GitHub 저장소</a>
+              <a href="mailto:community@onestack.ai?subject=Discord%20Invite">Discord 커뮤니티 문의</a>
+              <a href="mailto:docs@onestack.ai?subject=Docs%20Request">문서 요청</a>
+            </div>
+            <form class="newsletter-form" id="newsletter-form">
+              <label class="sr-only" for="newsletter-email">이메일 주소</label>
+              <input
+                id="newsletter-email"
+                name="email"
+                type="email"
+                placeholder="최신 업데이트를 받을 이메일"
+                required
+              />
+              <button type="submit" class="button button-primary">뉴스레터 신청</button>
+            </form>
+            <p class="newsletter-note">
+              분석/마케팅 목적의 연락 수신에 동의하는 것으로 간주되며, 동의 철회 요청 시 즉시
+              삭제됩니다.
+            </p>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div>
+        <div class="footer-column">
           <strong>Onestack</strong>
-          <p>Code to Edge, Securely</p>
+          <p>개발자는 코드에만 집중하고, 보안과 속도는 Onestack이 책임지는 Zero-Friction 클라우드 인프라.</p>
         </div>
-        <div class="footer-links">
-          <a href="#top">맨 위로</a>
-          <a href="mailto:hello@onestack.ai">문의하기</a>
+        <div class="footer-column">
+          <h3>빠른 링크</h3>
+          <div class="footer-links">
+            <a href="#demo">Docs Preview</a>
+            <a href="#comparison">API Snapshot</a>
+            <a href="#proof">Blog Stories</a>
+            <a href="#cta">Status & Support</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>커뮤니티</h3>
+          <div class="footer-links">
+            <a href="https://github.com/GabiaKwazii/onestack" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:community@onestack.ai?subject=Twitter%20Inquiry">Twitter</a>
+            <a href="mailto:community@onestack.ai?subject=Discord%20Inquiry">Discord</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>법률</h3>
+          <div class="footer-links">
+            <a href="mailto:privacy@onestack.ai?subject=Privacy%20Policy">Privacy</a>
+            <a href="mailto:legal@onestack.ai?subject=Terms%20of%20Service">Terms</a>
+            <a href="mailto:privacy@onestack.ai?subject=Cookie%20Policy">Cookies</a>
+          </div>
         </div>
       </footer>
     </div>

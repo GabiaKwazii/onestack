@@ -1,11 +1,31 @@
 const header = document.querySelector(".site-header");
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelectorAll(".site-nav a");
 const revealItems = document.querySelectorAll(".reveal");
 const counters = document.querySelectorAll("[data-count]");
+const newsletterForm = document.querySelector("#newsletter-form");
 
 const setHeaderState = () => {
   if (!header) return;
   header.classList.toggle("is-scrolled", window.scrollY > 12);
 };
+
+const closeMenu = () => {
+  if (!header || !menuToggle) return;
+  header.classList.remove("is-open");
+  menuToggle.setAttribute("aria-expanded", "false");
+};
+
+if (menuToggle && header) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = header.classList.toggle("is-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
 
 const revealObserver = new IntersectionObserver(
   (entries, observer) => {
@@ -40,6 +60,17 @@ const countObserver = new IntersectionObserver(
   },
   { threshold: 0.5 }
 );
+
+if (newsletterForm) {
+  newsletterForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = new FormData(newsletterForm).get("email");
+    if (typeof email !== "string" || !email) return;
+    const subject = encodeURIComponent("Onestack Newsletter Subscription");
+    const body = encodeURIComponent(`Please subscribe this email to product updates:\n${email}`);
+    window.location.href = `mailto:news@onestack.ai?subject=${subject}&body=${body}`;
+  });
+}
 
 setHeaderState();
 window.addEventListener("scroll", setHeaderState, { passive: true });
